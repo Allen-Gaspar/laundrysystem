@@ -1,0 +1,29 @@
+2026-04-20T06:44:36+02:00 | to=allengabrielsilvagaspar@gmail.com | subject=Booking confirmed: LND-20260420-361CC3 | mail=failed
+2026-04-20T06:46:54+02:00 | to=allengabrielsilvagaspar@gmail.com | subject=Booking status updated: LND-20260420-361CC3 (washing) | mail=failed
+2026-04-20T06:50:30+02:00 | to=allengabrielsilvagaspar@gmail.com | subject=Booking status updated: LND-20260420-361CC3 (drying) | mail=failed
+2026-04-20T06:50:53+02:00 | to=allengabrielsilvagaspar@gmail.com | subject=Booking status updated: LND-20260420-361CC3 (ready) | mail=failed
+2026-04-20T06:51:08+02:00 | to=allengabrielsilvagaspar@gmail.com | subject=Booking status updated: LND-20260420-361CC3 (completed) | mail=failed
+2026-04-20T06:54:59+02:00 | to=customer1@gmail.com | subject=Booking status updated: LND-20260328-5E112F (ready) | mail=failed
+2026-04-20T06:55:10+02:00 | to=len.10212005@gmail.com | subject=Booking status updated: LND-20260321-CD350E (cancelled) | mail=failed
+2026-04-20T07:06:27+02:00 | to=customer1@gmail.com | subject=Order update: LND-20260328-E56348 — Cancelled | sent=failed
+2026-04-20T07:07:47+02:00 | to=allengabrielsilvagaspar@gmail.com | subject=Your password was changed | sent=failed
+2026-04-20T07:10:58+02:00 | to=allengabrielsilvagaspar@gmail.com | subject=Reset your password | sent=failed
+2026-04-20T07:12:21+02:00 | to=allengabrielsilvagaspar@gmail.com | subject=Reset your password | sent=failed
+2026-04-20T07:14:13+02:00 | to=allengabrielsilvagaspar@gmail.com | subject=Reset your password | sent=failed
+2026-04-20T07:24:04+02:00 | to=allengabrielsilvagaspar@gmail.com | subject=Reset your password | sent=ok
+2026-04-20T07:27:13+02:00 | to=allengabrielsilvagaspar@gmail.com | subject=Reset your password | sent=ok
+2026-04-20T07:30:33+02:00 | to=patriciavernicerebosura77@gmail.com | subject=Welcome — your account is ready | sent=ok
+2026-04-20T07:31:46+02:00 | to=patriciavernicerebosura77@gmail.com | subject=Booking confirmed: LND-20260420-A11D8A | sent=ok
+2026-04-20T07:32:45+02:00 | to=patriciavernicerebosura77@gmail.com | subject=Order update: LND-20260420-A11D8A — Washing | sent=ok
+2026-04-20T07:33:08+02:00 | to=patriciavernicerebosura77@gmail.com | subject=Order update: LND-20260420-A11D8A — Drying | sent=ok
+2026-04-20T07:33:19+02:00 | to=patriciavernicerebosura77@gmail.com | subject=Order update: LND-20260420-A11D8A — Ready for pickup | sent=ok
+2026-04-20T07:33:28+02:00 | to=patriciavernicerebosura77@gmail.com | subject=Order update: LND-20260420-A11D8A — Completed | sent=ok
+2026-04-20T07:33:40+02:00 | to=customer1@gmail.com | subject=Order update: LND-20260328-5E112F — Completed | sent=ok
+2026-04-20T07:44:30+02:00 | to=allengabrielsilvagaspar@gmail.com | subject=Welcome — your account is ready | sent=ok
+2026-04-20T07:45:28+02:00 | to=allengabrielsilvagaspar@gmail.com | subject=Booking confirmed: LND-20260420-6F2216 | sent=ok
+2026-04-20T07:46:54+02:00 | to=allengabrielsilvagaspar@gmail.com | subject=Order update: LND-20260420-6F2216 — Washing | sent=ok
+2026-04-20T07:47:46+02:00 | to=allengabrielsilvagaspar@gmail.com | subject=Order update: LND-20260420-6F2216 — Drying | sent=ok
+2026-04-20T07:53:01+02:00 | to=allengabrielsilvagaspar@gmail.com | subject=Order update: LND-20260420-6F2216 — Ready for pickup | sent=ok
+2026-04-20T07:54:04+02:00 | to=allengabrielsilvagaspar@gmail.com | subject=Order update: LND-20260420-6F2216 — Completed | sent=ok
+2026-05-08T13:02:02+02:00 | to=len.10212005@gmail.com | subject=Booking confirmed: LND-20260508-19D7EB | sent=ok
+2026-05-08T13:03:41+02:00 | to=len.10212005@gmail.com | subject=Order update: LND-20260508-19D7EB — Washing | sent=ok

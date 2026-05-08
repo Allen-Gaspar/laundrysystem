@@ -1,0 +1,2 @@
+2026-03-25T07:51:16+01:00 | 09944009180 | Your laundry is ready for pickup! Total: P800.00 Invoice: auto/customer/invoice.php?code=LND-20260321-490289
+2026-03-28T01:12:48+01:00 | 09098046552 | Your laundry is ready for pickup! Total: P720.00 Invoice: auto/customer/invoice.php?code=LND-20260328-C63C07

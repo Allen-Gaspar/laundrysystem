@@ -1,0 +1,99 @@
+ :root {
+  --lp-primary: #2c3e50;
+  --lp-primary-light: #34495e;
+  --lp-accent: #f1c40f;
+  --lp-accent-dark: #d4ac0d;
+  --lp-body-bg: #ecf0f1;
+  --lp-card-shadow: 0 0.35rem 1rem rgba(44, 62, 80, 0.12);
+}
+
+body.lp-body {
+  font-family: 'Inter', system-ui, -apple-system, sans-serif;
+  background: linear-gradient(180deg, #f3f7fb 0%, var(--lp-body-bg) 120px);
+  color: var(--lp-primary);
+  min-height: 100vh;
+}
+
+.lp-navbar {
+  background: linear-gradient(135deg, var(--lp-primary) 0%, var(--lp-primary-light) 100%) !important;
+  box-shadow: var(--lp-card-shadow);
+}
+
+.lp-navbar .navbar-brand,
+.lp-navbar .nav-link {
+  color: #fff !important;
+}
+
+.lp-navbar .nav-link:hover {
+  color: var(--lp-accent) !important;
+}
+
+.lp-navbar .navbar-brand {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.6rem;
+}
+
+.lp-nav-logo {
+  width: 34px;
+  height: 34px;
+  border-radius: 50%;
+  object-fit: cover;
+  object-position: left center;
+  border: 2px solid rgba(255, 255, 255, 0.55);
+  box-shadow: 0 0 0 2px rgba(44, 62, 80, 0.25);
+}
+
+.lp-card {
+  border: none;
+  border-radius: 0.65rem;
+  box-shadow: var(--lp-card-shadow);
+  overflow: hidden;
+}
+
+.lp-card .card-header {
+  background: var(--lp-primary);
+  color: #fff;
+  font-weight: 600;
+  border: none;
+}
+
+.lp-btn-accent {
+  background-color: var(--lp-accent);
+  border-color: var(--lp-accent);
+  color: var(--lp-primary);
+  font-weight: 600;
+}
+
+.lp-btn-accent:hover {
+  background-color: var(--lp-accent-dark);
+  border-color: var(--lp-accent-dark);
+  color: var(--lp-primary);
+}
+
+.lp-text-accent {
+  color: var(--lp-accent-dark);
+}
+
+.lp-progress .progress-bar {
+  background-color: var(--lp-primary);
+}
+
+.lp-login-wrap {
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 2rem 1rem;
+  background: linear-gradient(160deg, var(--lp-primary) 0%, #1a252f 50%, var(--lp-primary-light) 100%);
+}
+
+.lp-login-card {
+  max-width: 420px;
+  width: 100%;
+}
+
+.lp-login-card .card-header {
+  font-size: 1.25rem;
+  text-align: center;
+}

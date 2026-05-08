@@ -1,0 +1,196 @@
+/* Thor's Thunder Wash — public landing */
+
+.landing-page {
+  --landing-deep: #2c3e50;
+  --landing-accent: #f1c40f;
+  --landing-sky: #3498db;
+  font-family: 'Inter', system-ui, sans-serif;
+  color: var(--landing-deep);
+  background: #f8fafb;
+}
+
+.landing-nav {
+  background: linear-gradient(135deg, var(--landing-deep) 0%, #34495e 100%);
+  box-shadow: 0 4px 24px rgba(44, 62, 80, 0.25);
+  padding: 0.75rem 0;
+}
+
+.landing-nav .navbar-brand {
+  font-weight: 700;
+  font-size: 1.15rem;
+  letter-spacing: -0.02em;
+  color: #fff !important;
+}
+
+.landing-nav .nav-link {
+  color: rgba(255, 255, 255, 0.9) !important;
+  font-weight: 500;
+  font-size: 0.95rem;
+}
+
+.landing-nav .nav-link:hover {
+  color: var(--landing-accent) !important;
+}
+
+.landing-btn-login {
+  border: 2px solid rgba(255, 255, 255, 0.35);
+  color: #fff !important;
+  font-weight: 600;
+  padding: 0.45rem 1.25rem;
+  border-radius: 0.5rem;
+  transition: all 0.2s ease;
+}
+
+.landing-btn-login:hover {
+  background: rgba(255, 255, 255, 0.12);
+  border-color: #fff;
+  color: #fff !important;
+}
+
+.landing-btn-cta {
+  background: var(--landing-accent);
+  color: var(--landing-deep) !important;
+  font-weight: 700;
+  padding: 0.5rem 1.35rem;
+  border-radius: 0.5rem;
+  border: none;
+  box-shadow: 0 4px 14px rgba(241, 196, 15, 0.45);
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.landing-btn-cta:hover {
+  background: #e6b80f;
+  color: var(--landing-deep) !important;
+  transform: translateY(-1px);
+  box-shadow: 0 6px 20px rgba(241, 196, 15, 0.5);
+}
+
+.landing-hero-wrap {
+  position: relative;
+  background: var(--landing-deep);
+}
+
+.landing-hero-wrap::after {
+  content: '';
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  height: 80px;
+  background: linear-gradient(to top, #f8fafb 0%, transparent 100%);
+  pointer-events: none;
+  z-index: 1;
+}
+
+.landing-hero-img {
+  width: 100%;
+  height: auto;
+  display: block;
+  max-height: min(72vh, 560px);
+  object-fit: cover;
+  object-position: center;
+}
+
+@media (min-width: 1200px) {
+  .landing-hero-img {
+    max-height: 520px;
+  }
+}
+
+.landing-tagline {
+  text-align: center;
+  padding: 2.5rem 1rem 1rem;
+  max-width: 720px;
+  margin: 0 auto;
+}
+
+.landing-tagline h1 {
+  font-size: clamp(1.5rem, 4vw, 2rem);
+  font-weight: 700;
+  color: var(--landing-deep);
+  line-height: 1.3;
+}
+
+.landing-tagline p {
+  color: #5d6d7e;
+  font-size: 1.05rem;
+  margin-top: 0.75rem;
+}
+
+.landing-features {
+  padding: 2rem 0 3.5rem;
+}
+
+.landing-feature-card {
+  background: #fff;
+  border-radius: 0.75rem;
+  padding: 1.75rem 1.5rem;
+  height: 100%;
+  border: 1px solid rgba(44, 62, 80, 0.08);
+  box-shadow: 0 8px 30px rgba(44, 62, 80, 0.06);
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.landing-feature-card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 14px 40px rgba(44, 62, 80, 0.1);
+}
+
+.landing-feature-card .icon {
+  width: 48px;
+  height: 48px;
+  border-radius: 12px;
+  background: linear-gradient(135deg, var(--landing-sky), var(--landing-deep));
+  color: #fff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.35rem;
+  margin-bottom: 1rem;
+}
+
+.landing-feature-card h3 {
+  font-size: 1.1rem;
+  font-weight: 700;
+  margin-bottom: 0.5rem;
+}
+
+.landing-feature-card p {
+  font-size: 0.92rem;
+  color: #5d6d7e;
+  margin: 0;
+  line-height: 1.55;
+}
+
+.landing-cta-band {
+  background: linear-gradient(135deg, var(--landing-deep) 0%, #1a252f 100%);
+  color: #fff;
+  padding: 3rem 1.5rem;
+  text-align: center;
+}
+
+.landing-cta-band h2 {
+  font-size: clamp(1.35rem, 3vw, 1.75rem);
+  font-weight: 700;
+  margin-bottom: 0.5rem;
+}
+
+.landing-cta-band p {
+  opacity: 0.9;
+  margin-bottom: 1.5rem;
+  max-width: 520px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.landing-footer {
+  background: #1a252f;
+  color: rgba(255, 255, 255, 0.65);
+  padding: 1.25rem 1rem;
+  text-align: center;
+  font-size: 0.875rem;
+}
+
+.landing-footer strong {
+  color: var(--landing-accent);
+}
