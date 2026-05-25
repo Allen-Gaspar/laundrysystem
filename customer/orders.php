@@ -2,7 +2,7 @@
 require __DIR__ . '/_auth.php';
 
 $laundry = new Laundry();
-$pageTitle = "My orders — Thor's Thunder Wash";
+$pageTitle = "My Booking — Thor's Thunder Wash";
 $list = $laundry->listTransactionsForCustomer((int) $currentUser['id']);
 $bp = base_path();
 

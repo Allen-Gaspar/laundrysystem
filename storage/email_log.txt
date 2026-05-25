@@ -27,3 +27,15 @@
 2026-04-20T07:54:04+02:00 | to=allengabrielsilvagaspar@gmail.com | subject=Order update: LND-20260420-6F2216 — Completed | sent=ok
 2026-05-08T13:02:02+02:00 | to=len.10212005@gmail.com | subject=Booking confirmed: LND-20260508-19D7EB | sent=ok
 2026-05-08T13:03:41+02:00 | to=len.10212005@gmail.com | subject=Order update: LND-20260508-19D7EB — Washing | sent=ok
+2026-05-16T05:49:46+02:00 | to=len.10212005@gmail.com | subject=Order update: LND-20260508-19D7EB — Ready for pickup | sent=ok
+2026-05-16T05:49:58+02:00 | to=len.10212005@gmail.com | subject=Order update: LND-20260508-19D7EB — Completed | sent=ok
+2026-05-16T06:12:27+02:00 | to=rinbelldelights@gmail.com | subject=Welcome — your account is ready | sent=ok
+2026-05-16T06:15:41+02:00 | to=rinbelldelights@gmail.com | subject=Booking confirmed: LND-20260516-87F025 | sent=ok
+2026-05-16T06:17:02+02:00 | to=rinbelldelights@gmail.com | subject=Order update: LND-20260516-87F025 — Washing | sent=ok
+2026-05-16T06:24:42+02:00 | to=len.10212005@gmail.com | subject=Order update: LND-20260516-00257F — Washing | sent=ok
+2026-05-16T06:36:15+02:00 | to=rinbelldelights@gmail.com | subject=Booking confirmed: LND-20260516-229E05 | sent=ok
+2026-05-16T06:40:29+02:00 | to=rinbelldelights@gmail.com | subject=Order update: LND-20260516-87F025 — Completed | sent=ok
+2026-05-20T02:57:41+02:00 | to=allengabrielsilvagaspar@gmail.com | subject=Welcome — your account is ready | sent=ok
+2026-05-20T02:59:41+02:00 | to=allengabrielsilvagaspar@gmail.com | subject=Booking confirmed: LND-20260520-1DA273 | sent=ok
+2026-05-20T03:32:36+02:00 | to=allengabriel@gmail.com | subject=Welcome — your account is ready | sent=ok
+2026-05-25T04:10:36+02:00 | to=gagfuag@gmail.com | subject=Welcome — your account is ready | sent=ok

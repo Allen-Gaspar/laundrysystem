@@ -15,7 +15,7 @@ $bp = base_path();
             <ul class="navbar-nav me-auto">
                 <li class="nav-item"><a class="nav-link" href="<?= htmlspecialchars($bp) ?>customer/home.php">Home</a></li>
                 <li class="nav-item"><a class="nav-link" href="<?= htmlspecialchars($bp) ?>customer/book.php">Book</a></li>
-                <li class="nav-item"><a class="nav-link" href="<?= htmlspecialchars($bp) ?>customer/orders.php">My orders</a></li>
+                <li class="nav-item"><a class="nav-link" href="<?= htmlspecialchars($bp) ?>customer/orders.php">My Laundry</a></li>
                 <li class="nav-item"><a class="nav-link" href="<?= htmlspecialchars($bp) ?>customer/profile.php">Profile</a></li>
             </ul>
             <span class="navbar-text text-white me-3 small"><?= htmlspecialchars($currentUser['full_name']) ?></span>
