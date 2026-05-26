@@ -2,12 +2,19 @@
 require_once dirname(__DIR__) . '/includes/paths.php';
 $bp = base_path();
 ?>
-<nav class="navbar navbar-expand-lg navbar-dark lp-navbar mb-4">
+<!-- Fixed: Changed class to 'fixed-top' to lock the navbar at the very top of the screen always -->
+<nav class="navbar navbar-expand-lg navbar-dark lp-navbar fixed-top">
     <div class="container">
-        <a class="navbar-brand fw-bold" href="<?= htmlspecialchars($bp) ?>customer/home.php">
-            <img src="<?= htmlspecialchars($bp) ?>assets/images/hero-banner.png" alt="Logo" class="lp-nav-logo">
-            Thor's Thunder Wash
-        </a>
+        <a class="navbar-brand fw-bold d-inline-flex align-items-center gap-2" href="<?= htmlspecialchars($bp) ?>customer/home.php">
+    <!-- FIXED: Tries to load logo.png, falls back to hero-banner.png if missing, and shows a bolt icon if both fail -->
+    <img src="<?= htmlspecialchars($bp) ?>assets/images/logo.png" 
+         onerror="this.src='<?= htmlspecialchars($bp) ?>assets/images/hero-banner.png'; this.onerror=function(){this.style.display='none';};"
+         alt="⚡" 
+         class="lp-nav-logo"
+         style="width: 34px; height: 34px; border-radius: 50%; object-fit: cover; object-position: left center;">
+    Thor's Thunder Wash ⚡
+</a>
+
         <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navCust">
             <span class="navbar-toggler-icon"></span>
         </button>

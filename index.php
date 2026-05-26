@@ -32,9 +32,16 @@ $pageTitle = "Thor's Thunder Wash — Clean. Fast. Affordable.";
 </head>
 <body class="landing-page d-flex flex-column min-vh-100">
     <header>
-        <nav class="navbar navbar-expand-lg landing-nav sticky-top">
+        <nav class="navbar navbar-expand-lg landing-nav fixed-top">
             <div class="container">
-                <a class="navbar-brand" href="<?= htmlspecialchars($baseHref) ?>">Thor's Thunder Wash ⚡</a>
+                <a class="navbar-brand d-inline-flex align-items-center gap-2 fw-bold" href="<?= htmlspecialchars($baseHref) ?>">
+    <!-- Dynamic logo inclusion with inline safety dimensions -->
+    <img src="<?= htmlspecialchars($baseHref) ?>assets/images/logo.jpg" 
+         alt="Thor's Thunder Wash Logo" 
+         style="width: 40px; height: 40px; object-fit: cover; border-radius: 50%; border: 2px solid rgba(255,255,255,0.75);">
+    Thor's Thunder Wash ⚡
+</a>
+
                 <button class="navbar-toggler navbar-dark" type="button" data-bs-toggle="collapse" data-bs-target="#landingNav">
                     <span class="navbar-toggler-icon"></span>
                 </button>
@@ -53,16 +60,58 @@ $pageTitle = "Thor's Thunder Wash — Clean. Fast. Affordable.";
         </nav>
     </header>
 
+<!-- GENTLE BACKGROUND WATER BUBBLES ACCENT LAYER -->
+<div class="water-bubble-container" aria-hidden="true">
+    <div class="bubble"></div>
+    <div class="bubble"></div>
+    <div class="bubble"></div>
+    <div class="bubble"></div>
+    <div class="bubble"></div>
+</div>
+
+
+
     <main class="flex-grow-1">
         <section class="landing-hero-wrap" aria-label="Hero">
             <img
-                src="<?= htmlspecialchars($baseHref) ?>assets/images/hero-banner.png"
+                src="<?= htmlspecialchars($baseHref) ?>assets/images/hero-banner.jpg"
                 alt="Thor's Thunder Wash — Drop, Relax. Pick Up Thunderously Fresh."
                 class="landing-hero-img"
                 width="1920"
                 height="640"
                 fetchpriority="high"
             >
+        </section>
+
+        <section id="promo" class="py-5" style="background: #bcc6ff;">
+            <div class="container">
+                <div class="row g-4 align-items-center">
+                    <div class="col-md-6">
+                        <div class="p-4 rounded-4 shadow-sm text-white" style="background: linear-gradient(135deg, #0284c7 0%, #0c4a6e 100%); border-left: 5px solid #f1c40f;">
+                            <span class="badge bg-warning text-dark fw-bold mb-2">Best Value</span>
+                            <h2 class="fw-extrabold mb-3" style="font-size: 2.2rem; letter-spacing: -0.5px;">FOR ONLY <span style="color: #f1c40f;">P179</span> / 8kg</h2>
+                            <ul class="list-unstyled fs-5 mb-0 d-flex flex-wrap gap-3">
+                                <li><span class="text-warning">✔</span> Wash</li>
+                                <li><span class="text-warning">✔</span> Dry</li>
+                                <li><span class="text-warning">✔</span> Fold</li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="col-md-6">
+                        <div class="h-100 p-4 rounded-4 bg-white shadow-sm border border-light-subtle">
+                            <h4 class="fw-bold d-flex align-items-center gap-2 text-primary">
+                                <span>🚀</span> Free Delivery Service
+                            </h4>
+                            <p class="text-muted mb-4">Available exclusively inside <strong class="text-dark">Bella Vita Subdivision</strong>. Direct to your doorstep layout flow.</p>
+                            
+                            <h4 class="fw-bold d-flex align-items-center gap-2 text-dark">
+                                <span>⏰</span> Business Hours
+                            </h4>
+                            <p class="text-muted mb-0">We wash daily from <strong class="text-primary">8:00 AM – 6:00 PM</strong>.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
         </section>
 
         <section class="landing-tagline">
@@ -73,6 +122,8 @@ $pageTitle = "Thor's Thunder Wash — Clean. Fast. Affordable.";
                 <a class="btn btn-outline-secondary btn-lg px-4" href="<?= htmlspecialchars($baseHref) ?>login.php">I already have an account</a>
             </div>
         </section>
+
+        
 
         <section id="services" class="landing-features">
             <div class="container">
@@ -130,11 +181,30 @@ $pageTitle = "Thor's Thunder Wash — Clean. Fast. Affordable.";
         </section>
     </main>
 
-    <footer class="landing-footer mt-auto">
-        <div class="container">
-            <strong>CLEAN. FAST. AFFORDABLE.</strong> — Thor's Thunder Wash · <a href="<?= htmlspecialchars($baseHref) ?>login.php" class="text-white text-decoration-underline">Login</a>
+        <!-- UPDATED FOOTER WITH CONTACT & LOCATION DETAILS -->
+    <footer class="landing-footer py-4 bg-dark text-white-50">
+        <div class="container text-center">
+            <div class="row g-3 mb-3 small text-start text-md-center">
+                <div class="col-md-4">
+                    <strong class="text-white">📞 Contact Numbers:</strong><br>
+                    0927-894-5699 / 0966-692-7200
+                </div>
+                <div class="col-md-4">
+                    <strong class="text-white">📍 Location:</strong><br>
+                    Blk 50 lot 6, Bella Vita Subdivision, Brgy. Anilao, Lipa City, Batangas
+                </div>
+                <div class="col-md-4">
+                    <strong class="text-white">🌐 Facebook Page:</strong><br>
+                    <a href="https://www.facebook.com/profile.php?id=61588189839332" target="_blank" class="text-info text-decoration-none">Thor's Thunder Wash Laundry Services</a>
+                </div>
+            </div>
+            <hr class="border-secondary opacity-25">
+            <div class="mt-3 small">
+                <strong style="color: #38bdf8;">CLEAN. FAST. AFFORDABLE.</strong> — Thor's Thunder Wash · <a href="<?= htmlspecialchars($baseHref) ?>login.php" class="text-white text-decoration-underline">Login</a>
+            </div>
         </div>
     </footer>
+
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
 </body>

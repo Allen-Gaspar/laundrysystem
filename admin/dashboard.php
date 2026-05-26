@@ -1,7 +1,7 @@
 <?php
 require __DIR__ . '/_auth.php';
 
-$pageTitle = "Dashboard — Thor's Thunder Wash";
+$pageTitle = "Thor's Thunder Wash";
 $laundry = new Laundry();
 $salesToday = $laundry->salesToday();
 $pending = $laundry->countPendingBookings();

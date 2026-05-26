@@ -2,7 +2,7 @@
 require __DIR__ . '/_auth.php';
 
 $laundry = new Laundry();
-$pageTitle = "Home — Thor's Thunder Wash";
+$pageTitle = "Thor's Thunder Wash";
 $current = $laundry->getCurrentOrderForUser((int) $currentUser['id']);
 
 function status_progress(string $status): int

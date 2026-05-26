@@ -1,99 +1,181 @@
- :root {
-  --lp-primary: #2c3e50;
-  --lp-primary-light: #34495e;
-  --lp-accent: #f1c40f;
-  --lp-accent-dark: #d4ac0d;
-  --lp-body-bg: #ecf0f1;
-  --lp-card-shadow: 0 0.35rem 1rem rgba(44, 62, 80, 0.12);
+:root {
+  /* Dynamic Water Color Palette Variables */
+  --lp-primary: #0284c7;         /* Deep Ocean Blue */
+  --lp-primary-light: #0ea5e9;   /* Clear Water Blue */
+  --lp-primary-dark: #0c4a6e;    /* Dark Abyssal Blue */
+  --lp-accent: #f1c40f;          /* Thor's Golden Thunder Yellow */
+  --lp-accent-dark: #d4ac0d;     /* Deep Thunder Gold */
+  --lp-body-bg: #e0f2fe;         /* Soft Crystal Sky Blue */
+  --lp-card-shadow: 0 0.5rem 1.5rem rgba(2, 132, 199, 0.08);
 }
 
 body.lp-body {
   font-family: 'Inter', system-ui, -apple-system, sans-serif;
-  background: linear-gradient(180deg, #f3f7fb 0%, var(--lp-body-bg) 120px);
-  color: var(--lp-primary);
+  /* Beautiful water-color smooth background gradient cascade */
+  background: linear-gradient(180deg, #f0f9ff 0%, #e0f2fe 40%, #bae6fd 100%);
+  color: var(--lp-primary-dark);
   min-height: 100vh;
 }
 
+/* Beautiful Frosted Glassmorphism Header Bar Layout */
 .lp-navbar {
-  background: linear-gradient(135deg, var(--lp-primary) 0%, var(--lp-primary-light) 100%) !important;
-  box-shadow: var(--lp-card-shadow);
+  background: rgba(12, 74, 110, 0.92) !important;
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+  border-bottom: 3px solid var(--lp-primary-light);
+  box-shadow: 0 4px 20px rgba(2, 132, 199, 0.15);
 }
 
 .lp-navbar .navbar-brand,
 .lp-navbar .nav-link {
   color: #fff !important;
+  font-weight: 500;
+  transition: all 0.25s ease;
 }
 
 .lp-navbar .nav-link:hover {
   color: var(--lp-accent) !important;
+  transform: translateY(-1px);
 }
 
 .lp-navbar .navbar-brand {
   display: inline-flex;
   align-items: center;
   gap: 0.6rem;
+  font-weight: 800 !important;
+  text-shadow: 0 0 10px rgba(14, 165, 233, 0.5);
 }
 
 .lp-nav-logo {
-  width: 34px;
-  height: 34px;
+  width: 36px;
+  height: 36px;
   border-radius: 50%;
   object-fit: cover;
   object-position: left center;
-  border: 2px solid rgba(255, 255, 255, 0.55);
-  box-shadow: 0 0 0 2px rgba(44, 62, 80, 0.25);
+  border: 2px solid #fff;
+  box-shadow: 0 0 0 2px var(--lp-primary-light);
+  transition: transform 0.3s ease;
 }
 
+.lp-nav-logo:hover {
+  transform: rotate(15deg) scale(1.05);
+}
+
+/* Watercolor High-Utility Cards Layout */
 .lp-card {
-  border: none;
-  border-radius: 0.65rem;
+  border: 1px solid rgba(14, 165, 233, 0.15);
+  border-radius: 1rem;
   box-shadow: var(--lp-card-shadow);
   overflow: hidden;
+  background: #ffffff;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.lp-card:hover {
+  box-shadow: 0 0.75rem 2rem rgba(2, 132, 199, 0.12);
 }
 
 .lp-card .card-header {
-  background: var(--lp-primary);
+  background: linear-gradient(135deg, var(--lp-primary-dark) 0%, var(--lp-primary) 100%);
   color: #fff;
-  font-weight: 600;
+  font-weight: 700;
   border: none;
+  padding: 1rem 1.25rem;
+  letter-spacing: 0.3px;
 }
 
+/* Golden Accent Core Interaction Buttons */
 .lp-btn-accent {
-  background-color: var(--lp-accent);
-  border-color: var(--lp-accent);
-  color: var(--lp-primary);
-  font-weight: 600;
+  background: linear-gradient(135deg, var(--lp-accent) 0%, var(--lp-accent-dark) 100%);
+  border: none;
+  color: var(--lp-primary-dark) !important;
+  font-weight: 700;
+  border-radius: 0.5rem;
+  box-shadow: 0 4px 12px rgba(241, 196, 15, 0.2);
+  transition: all 0.25s ease;
 }
 
 .lp-btn-accent:hover {
-  background-color: var(--lp-accent-dark);
-  border-color: var(--lp-accent-dark);
-  color: var(--lp-primary);
+  background: linear-gradient(135deg, var(--lp-accent-dark) 0%, #b5930a 100%);
+  transform: translateY(-1px);
+  box-shadow: 0 6px 16px rgba(241, 196, 15, 0.35);
 }
 
 .lp-text-accent {
   color: var(--lp-accent-dark);
+  font-weight: 600;
 }
 
+/* Water Flow Styled Dynamic Progress Bars */
 .lp-progress .progress-bar {
-  background-color: var(--lp-primary);
+  background: linear-gradient(90deg, var(--lp-primary) 0%, var(--lp-primary-light) 100%);
+  box-shadow: inset 0 -1px 0 rgba(0,0,0,0.15);
 }
 
+/* Deep water wave ambient lighting overlay effect behind the login card */
 .lp-login-wrap {
   min-height: 100vh;
   display: flex;
   align-items: center;
   justify-content: center;
   padding: 2rem 1rem;
-  background: linear-gradient(160deg, var(--lp-primary) 0%, #1a252f 50%, var(--lp-primary-light) 100%);
+  /* CHANGED: Swapped dark charcoal for a premium watercolor light blue gradient flow */
+  background: #bcc6ff;
+  position: relative;
+  overflow: hidden;
 }
+
+/* Light ambient watercolor splash accent effect behind the card */
+.lp-login-wrap::before {
+  content: "";
+  position: absolute;
+  width: 400px;
+  height: 400px;
+  background: #bcc6ff;
+  top: -5%;
+  left: -5%;
+  pointer-events: none;
+}
+
 
 .lp-login-card {
   max-width: 420px;
   width: 100%;
+  border-radius: 1.25rem;
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  box-shadow: 0 1.5rem 3.5rem rgba(0, 0, 0, 0.35);
 }
 
 .lp-login-card .card-header {
-  font-size: 1.25rem;
+  font-size: 1.35rem;
   text-align: center;
+  font-weight: 800;
+  background: linear-gradient(135deg, var(--lp-primary) 0%, var(--lp-primary-light) 100%);
+  padding: 1.25rem;
+}
+
+
+body.customer-body {
+  /* Creates space so the new fixed top menu doesn't block out your cards */
+  padding-top: 63px; 
+}
+
+/* Ensure the navbar handles layer stacks correctly over buttons */
+.lp-navbar.fixed-top {
+  z-index: 1030 !important;
+}
+
+
+/* --- CLEAN DARK WATER BACKGROUND RESET --- */
+body.lp-body, body.customer-body {
+  padding-top: 90px !important;
+  /* Rich Dark Sea Gradient Canvas */
+  background: linear-gradient(180deg, #83b6d6 0%, #76a7c5 50%, #9cb8ca 100%) !important;
+  min-height: 100vh;
+}
+
+
+/* Ensure the floating navigation bar stays cleanly layered on top of all other elements */
+.lp-navbar.fixed-top {
+  z-index: 2000 !important;
 }
